@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  width: 100%;
 }
 
 .mobile-nav {
@@ -256,6 +257,10 @@ nav ul li a {
   width: 100%;
 }
 
+.mobile-nav label {
+  color: #666666;
+}
+
 @media (max-width: 1000px) {
   .tab-content {
     flex-direction: column;
@@ -289,41 +294,78 @@ nav ul li a {
 
 @media (max-width: 650px) {
 
-.tabs .tab,  .tabs label {
-  -webkit-box-ordinal-group: NaN;
-  -webkit-order: initial;
-  -ms-flex-order: initial;
-  order: initial;
+  .tabs .tab,  .tabs label {
+    -webkit-box-ordinal-group: NaN;
+    -webkit-order: initial;
+    -ms-flex-order: initial;
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+
+  .card {
+    grid-column: 1/7
+  }
+
+  .nav-link,
+  .nav-input {
+    display: none;
+  }
+
+  .nav-bar-logo {
+    height: 15vw
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav label {
+    font-size: 2rem
+  }
 }
 
-.tabs label {
-  width: 100%;
-  margin-right: 0;
-  margin-top: 0.2rem;
+#accordion-code-btn,
+#flex-cards-code-btn,
+#mobile-code-btn {
+  background-color: #3F3244;
+  width: 13rem;
+  height: 3rem;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1rem;
+  display: block;
+  margin: 1rem auto;
 }
 
-.card {
-  grid-column: 1/7
+#accordion-code-btn:hover,
+#flex-cards-code-btn:hover,
+#mobile-code-btn:hover {
+  background-color: #2F2235
 }
 
-.nav-link,
-.nav-input {
+
+.hide-accordion-code,
+.hide-flex-code,
+.hide-mobile-code {
   display: none;
 }
 
-.nav-bar {
-  /*flex-direction: column;*/
-}
-
-.mobile-nav {
+.show-accordion-code,
+.show-flex-code,
+.show-mobile-code {
   display: block;
 }
+
+#accordion-codepen,
+#flex-cards-codepen,
+#mobile-codepen {
+  margin: 0 8%;
 }
-
-
-
-
-
 
 
 
