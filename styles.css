@@ -121,7 +121,7 @@ Accordion Tabs
 }
 
 .tab-content-text {
-  font-size: 1.25rem;
+  font-size: 1.75vw;
   margin: 1rem 0 0 0;
 }
 
@@ -198,6 +198,20 @@ Flexible Cards
 }
 
 /*HEADER BAR*/
+
+#search {
+    padding-left: 1rem;
+    background-image: url(images/magnifying-glass.svg);
+    background-size: 25px;
+    background-position: 5px;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+
+#search::placeholder {
+  font-size: 1rem;
+}
+
 .header-bar {
   margin: 8%;
 }
@@ -270,6 +284,10 @@ nav ul li a {
     padding: 2rem 0;
   }
 
+  .tab-content-text {
+    font-size: 2.25vw;
+  }
+
   .image {
     width: 100%;
   }
@@ -299,6 +317,14 @@ nav ul li a {
     -webkit-order: initial;
     -ms-flex-order: initial;
     order: initial;
+  }
+
+  .tab-content-header {
+    font-size: 5vw;
+  }
+
+  .tab-content-text {
+    font-size: 4vw
   }
 
   .tabs label {
